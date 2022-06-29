@@ -1,0 +1,133 @@
+<template>
+  <div class="header">
+    <h1 class="header-text">Minimize your tabs.</h1>
+    <h1 class="header-text">Find your trends!</h1>
+    <p class="header-body">
+      Don't let your computer memories consumes all of those browser tabs.
+      Findtrend let you gathers all of your favorite website into one place.
+    </p>
+    <div class="mid-hero">
+      <Button text="Get Started 🔥" :style="buttonStyle" />
+      <img src="../assets/img-hero.svg" alt="" />
+    </div>
+    <div class="scontainer">
+      <Containers
+        v-for="container in socialContainersData"
+        :key="container.id"
+        :containerImage="container.sImage"
+        :containerText="container.text"
+        :cId="container.id"
+        :gcId="container.gcid"
+      />
+    </div>
+  </div>
+</template>
+
+<script>
+import Button from "@/components/Button.vue";
+import Containers from "@/components/Containers.vue";
+export default {
+  name: "Header",
+  components: { Button, Containers },
+  data() {
+    return {
+      buttonStyle: {
+        background: "#A8FF35",
+        borderRadius: "40px",
+        fontFamily: "Effra",
+        fontStyle: "normal",
+        fontWeight: "700",
+        fontSize: "18px",
+        lineHeight: "140%",
+        textAlign: "center",
+        color: "#000000",
+        padding: "16px 32px",
+        border: "none",
+        marginRight: "18px",
+      },
+      socialContainersData: [
+        {
+          id: "one",
+          sImage: require("@/assets/sbasketball.svg"),
+          text: "Elon Musk - Search",
+          gcid: true,
+        },
+        {
+          id: "two",
+          sImage: require("@/assets/sfacebook.svg"),
+          text: "Product Design - Search",
+          gcid: true,
+        },
+        {
+          id: "three",
+          sImage: require("@/assets/spinterest.svg"),
+          text: "Popular design - Search",
+          gcid: true,
+        },
+        {
+          id: "four",
+          sImage: require("@/assets/stwitter.svg"),
+          text: "Cryptopunk - Search",
+          gcid: true,
+        },
+      ],
+    };
+  },
+};
+</script>
+
+<style scoped>
+.header {
+  text-align: center;
+}
+.header-text {
+  font-family: "Effra";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 112%;
+  text-align: center;
+  color: #ffffff;
+}
+.header-body {
+  font-family: "Effra";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #8b8b8b;
+  width: 666px;
+  margin: 28px auto;
+  margin-bottom: 40px;
+}
+.mid-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#one {
+  transform: rotate(4deg);
+  position: relative;
+  left: 1130px;
+  top: 185px;
+}
+#two {
+  transform: rotate(-2deg);
+  position: relative;
+  left: 860px;
+  top: 50px;
+}
+#three {
+  transform: rotate(2deg);
+  position: relative;
+  left: 660px;
+  top: 30px;
+}
+#four {
+  transform: rotate(-4deg);
+  position: relative;
+  left: 460px;
+  top: -110px;
+}
+</style>
