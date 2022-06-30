@@ -8,7 +8,7 @@
       <img :src="plan.tick" alt="" />
       <p class="plan-text">{{ plan.text }}</p>
     </div>
-    <Button text="Start Free Trial" :style="buttonStyle" />
+    <Button text="Start Free Trial" />
   </div>
 </template>
 
@@ -21,7 +21,6 @@ export default {
   data() {
     return {
       buttonStyle: {
-        background: "#A8FF35",
         borderRadius: "29px",
         fontFamily: "Effra",
         fontStyle: "normal",
@@ -29,7 +28,6 @@ export default {
         fontSize: "18px",
         lineHeight: "140%",
         textAlign: "center",
-        color: "#000000",
         padding: "16px 88px",
         border: "none",
         marginTop: "auto",
@@ -62,6 +60,18 @@ export default {
   color: #000000;
   margin-bottom: 32px;
 }
+.card button {
+  border-radius: 29px;
+  font-family: "Effra";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  padding: 16px 88px;
+  border: none;
+  margin-top: auto;
+}
 .plan-price {
   font-family: "Effra";
   font-style: normal;
@@ -91,5 +101,77 @@ span {
   font-size: 18px;
   line-height: 100%;
   color: #000000;
+}
+#regular button {
+  background: #000000;
+  color: #ffffff;
+}
+#premium button {
+  background: #a8ff35;
+  color: #000000;
+}
+#personal button {
+  background: #a8ff35;
+  color: #000000;
+}
+@media screen and (max-width: 600px) {
+  .plan-type {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    color: #000000;
+  }
+  .plan-desc {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #000000;
+  }
+  .plan-price {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    color: #000000;
+    margin: 32px 0;
+  }
+  .deals-data {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .plan-text {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #000000;
+    margin-left: 13px;
+  }
+  .card button {
+    border-radius: 27.3083px;
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    padding: 15px 70px;
+    border: none;
+    margin-top: auto;
+  }
+  span {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #000000;
+  }
 }
 </style>

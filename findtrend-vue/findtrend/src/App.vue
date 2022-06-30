@@ -5,6 +5,8 @@
   <Sponsors />
   <Connect />
   <Deal />
+  <Join />
+  <Footer />
 </template>
 
 <script>
@@ -14,6 +16,8 @@ import Sponsors from "@/components/Sponsors.vue";
 import About from "@/components/About.vue";
 import Connect from "@/components/Connect.vue";
 import Deal from "@/components/Deal.vue";
+import Join from "@/components/Join.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   name: "App",
   components: {
@@ -23,6 +27,8 @@ export default {
     About,
     Connect,
     Deal,
+    Join,
+    Footer,
   },
 };
 </script>

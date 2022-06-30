@@ -50,6 +50,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 128px;
 }
 .logo {
   display: flex;
@@ -86,5 +87,16 @@ a {
   line-height: 100%;
   text-align: center;
   color: #ffffff;
+}
+@media screen and (max-width: 600px) {
+  ul {
+    display: none;
+  }
+  nav {
+    margin-bottom: 80px;
+  }
+  .logo-text {
+    display: none;
+  }
 }
 </style>

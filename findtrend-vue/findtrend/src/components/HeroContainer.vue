@@ -1,7 +1,7 @@
 <template>
   <section class="hero-container">
     <div class="hero-content">
-      <Navbar :style="{ marginBottom: '128px' }" />
+      <Navbar />
       <Header />
     </div>
   </section>
@@ -18,9 +18,12 @@ export default {
 
 <style scoped>
 .hero-container {
-  /* background-color: black; */
-  position: relative;
   padding: 28px 80px;
   background-image: url(../assets/Bg-hero.svg);
+}
+@media screen and (max-width: 600px) {
+  .hero-container {
+    padding: 24px 18px;
+  }
 }
 </style>
