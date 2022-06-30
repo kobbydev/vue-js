@@ -11,7 +11,7 @@
           :containerText="container.text"
           :cId="container.id"
           :gcId="container.gcid"
-          :style="{ position: 'relative', boxShadow: 'none' }"
+          :style="containerStyles"
         />
       </div>
       <img src="../assets/need-img.svg" alt="" />
@@ -30,6 +30,20 @@ export default {
   components: { Container },
   data() {
     return {
+      containerStyles: {
+        position: "relative",
+        width: "341.23px",
+        height: "82px",
+        background: "#181818",
+        boxShadow: "none",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "flex-start",
+        borderRadius: "8px",
+        paddingTop: "23px",
+        paddingLeft: "20px",
+        paddingBottom: "20px",
+      },
       newContainerData: [
         {
           id: "wqwe",

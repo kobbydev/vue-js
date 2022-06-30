@@ -4,6 +4,7 @@
   <About />
   <Sponsors />
   <Connect />
+  <Deal />
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import NewTabs from "@/components/NewTabs.vue";
 import Sponsors from "@/components/Sponsors.vue";
 import About from "@/components/About.vue";
 import Connect from "@/components/Connect.vue";
+import Deal from "@/components/Deal.vue";
 export default {
   name: "App",
   components: {
@@ -20,6 +22,7 @@ export default {
     Sponsors,
     About,
     Connect,
+    Deal,
   },
 };
 </script>

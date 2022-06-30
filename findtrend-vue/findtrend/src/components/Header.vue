@@ -18,6 +18,7 @@
         :containerText="container.text"
         :cId="container.id"
         :gcId="container.gcid"
+        :style="containerStyles"
       />
     </div>
   </div>
@@ -44,6 +45,20 @@ export default {
         padding: "16px 32px",
         border: "none",
         marginRight: "18px",
+      },
+      containerStyles: {
+        position: "relative",
+        width: "341.23px",
+        height: "82px",
+        background: "#181818",
+        boxShadow: "5px 5px rgba(0,0,0,0.5)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "flex-start",
+        borderRadius: "8px",
+        paddingTop: "23px",
+        paddingLeft: "20px",
+        paddingBottom: "20px",
       },
       socialContainersData: [
         {

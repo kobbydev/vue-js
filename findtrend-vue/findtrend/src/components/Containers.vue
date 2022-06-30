@@ -23,18 +23,6 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  width: 341.23px;
-  height: 82px;
-  background: #181818;
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
-  padding-top: 23px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
 .gradient-container {
   background: linear-gradient(#181818 53.65%, rgba(24, 24, 24, 0.8) 100%);
   width: 84.65px;
