@@ -157,7 +157,7 @@ p {
     border-radius: 14px;
     width: 339px;
     height: 118px;
-    margin: 0;
+    margin: auto;
   }
   .mid-new-tabs img:nth-of-type(2) {
     display: block;

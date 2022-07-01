@@ -17,6 +17,7 @@
         <Button text="Register" :style="buttonStyle" />
       </ul>
     </div>
+    <div class="overlay" v-if="isShow"></div>
     <div class="mobile-menu" v-if="isShow">
       <div class="logos">
         <img src="../assets/findlogo.svg" alt="" />
@@ -46,7 +47,6 @@ import Button from "@/components/Button.vue";
 export default {
   name: "Navbar",
   components: { Button },
-  props: ["show"],
   data() {
     return {
       buttonStyle: {
@@ -131,18 +131,22 @@ a {
   }
   .m-links li {
     margin-bottom: 40px;
+    margin-right: 0;
   }
   .logo-text {
     display: none;
   }
-  /* .overlay {
+  .overlay {
     background-color: black;
-    opacity: 0.2;
+    opacity: 0.9;
     height: 100%;
+    width: 100%;
     position: fixed;
+    left: 0;
     top: 0;
+    bottom: 0;
     z-index: 5;
-  } */
+  }
   .ham,
   .hamb {
     display: block;
@@ -152,14 +156,15 @@ a {
   }
   .mobile-menu {
     background-color: black;
+    opacity: 1;
     width: 100%;
     text-align: center;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 638px;
-    z-index: 5;
-    padding: 10px;
+    z-index: 10;
+    padding: 24px 18px;
     /* height: 638px;
     display: flex;
     flex-direction: column;

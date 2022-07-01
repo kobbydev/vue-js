@@ -247,6 +247,7 @@ export default {
     top: 202px;
     width: 293.04px;
     height: 70.42px;
+    margin: auto;
   }
   #two {
     /* position: static; */
@@ -254,6 +255,7 @@ export default {
     top: 62px;
     width: 293.04px;
     height: 70.42px;
+    margin: auto;
   }
   #three {
     /* position: static; */
@@ -261,6 +263,7 @@ export default {
     top: -62px;
     width: 293.04px;
     height: 70.42px;
+    margin: auto;
   }
   #four {
     /* position: static; */
@@ -268,6 +271,7 @@ export default {
     top: -202px;
     width: 293.04px;
     height: 70.42px;
+    margin: auto;
   }
 }
 </style>
