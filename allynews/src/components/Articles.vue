@@ -2,7 +2,7 @@
   <div class="articles">
     <h1 class="article-header">ARTICLE</h1>
     <div class="cards">
-      <Cards :globalNews="globalNews" />
+      <Cards :cNews="globalNews" />
     </div>
   </div>
 </template>
@@ -12,20 +12,6 @@ import Cards from "@/components/Card.vue";
 export default {
   name: "Articles",
   components: { Cards },
-  //   async created() {
-  //     await this.getAllGlobalNews();
-  //     console.log(this.globalNews);
-  //   },
-  //   computed: {
-  //     ...mapGetters({
-  //       globalNews: "getGlobalNews",
-  //     }),
-  //   },
-  //   methods: {
-  //     ...mapActions({
-  //       getAllGlobalNews: "getAllGlobalNews",
-  //     }),
-  //   },
 };
 </script>
 

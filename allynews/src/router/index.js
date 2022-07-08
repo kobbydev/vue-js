@@ -3,6 +3,8 @@ import HomeView from '../views/HomeView.vue'
 import TechnologyView from '../views/TechnologyView.vue'
 import BusinessView from '../views/BusinessView.vue'
 import HealthView from '../views/HealthView.vue'
+import NewsView from '../views/NewsView.vue'
+import SearchView from '../views/SearchView'
 
 const routes = [
   {
@@ -24,6 +26,18 @@ const routes = [
     path: '/health/:name',
     name: 'health',
     component: HealthView
+  },
+  {
+    path: '/newspage/:name',
+    name: 'newspage',
+    component: NewsView,
+    props: true,
+  },
+  {
+    path: '/search/:name',
+    name: 'search',
+    component: SearchView,
+    props: true,
   },
   {
     path: '/about/:name',

@@ -4,7 +4,13 @@
       <img src="../assets/polygon.svg" alt="" />
     </div>
     <ul class="menu-links">
-      <li><router-link to="/" class="links">Global</router-link></li>
+      <li>
+        <router-link
+          :to="{ name: 'home', params: { name: 'home' } }"
+          class="links"
+          >Global</router-link
+        >
+      </li>
       <li>
         <router-link
           :to="{ name: 'technology', params: { name: 'technology' } }"

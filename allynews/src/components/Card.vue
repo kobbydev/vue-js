@@ -1,9 +1,18 @@
 <template>
-  <div class="card" v-for="cnew in cNews.slice(1, 13)">
+  <div
+    class="card"
+    v-for="(cnew, index) in cNews.slice(1, 13)"
+    :key="index"
+    @click="
+      this.$router.push({ name: 'newspage', params: { name: cnew.title } })
+    "
+  >
     <img :src="cnew.urlToImage" alt="" />
     <div class="card-body">
+      <!-- <router-link :to="{ name: 'newspage', params: { name: cnew.title } }">
+        {{ cnew.title }}</router-link
+      > -->
       <h3 class="card-title">
-        <!-- The “West Side Story” flop is the fault of the pandemic -->
         {{ cnew.title }}
       </h3>
       <p class="date-time">July 7, 2022 • 7 mins read</p>
@@ -28,6 +37,7 @@ export default {
   text-align: start;
   width: 284px;
   margin-bottom: 35px;
+  cursor: pointer;
 }
 .card img {
   margin-bottom: 16px;
