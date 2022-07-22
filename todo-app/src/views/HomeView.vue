@@ -54,7 +54,9 @@
 					</tr>
 				</table>
 				<div class="task-menu">
-					<p>{{ tasks.length }} items left</p>
+					<p>
+						{{ this.tasks.filter((data) => !data.checked).length }} items left
+					</p>
 					<ul class="menu-links">
 						<li><a href="#" class="links" @click="select = 'all'">All</a></li>
 						<li>
